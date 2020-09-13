@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
     <meta charset="utf-8">
-    <title>Maneesh's Personal site</title>
-  </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+          var div = $("div");
+          div.animate({left: '100px'}, "slow");
+          div.animate({fontSize: '3em'}, "slow");
+        });
+      });
+      </script>
+
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
   <body>
   <table cellspacing='20'>
     <tr>
       <td><img src="Maneesh.png" alt="profile Picture"></td>
-      <td><p><strong><h1>Maneesh Reddy</h1></strong></p>
-      <p><h3><em>Student</h3></em></p>
-      <p><h3><em>Innovator</h3></em></p>
-      <p><h3><em>Quick Learner</h3></em></p>
+      <td><p><strong><h1 id="name">Maneesh Reddy</h1></strong></p>
+      <p><h2><em>Student</h2></em></p>
+      <p><h2><em>Innovator</h2></em></p>
+      <p><h2><em>Quick Learner</h2></em></p>
       </td>
     </tr>
   </table>
   <hr>
-  <h3>Education Details</h3>
+  <h2>Education Details</h2>
   <table >
     <thead>
       <tr>
@@ -45,7 +60,7 @@
   </table>
   <br>
   <br>
-  <h3>Skills</h3>
+  <h2>Skills</h2>
   <table>
     <tr>
       <td>C Programming</td>
@@ -70,7 +85,7 @@
   </table>
   <br>
   <br>
-  <h3>Hobbies</h3>
+  <h2>Hobbies</h2>
   <ul>
     <li>Reading Books</li>
     <li>Watching movies</li>
@@ -78,9 +93,16 @@
   </ul>
   <br>
   <br>
-  <h3>Contact Details</h3>
+  <h2>Contact Details</h2>
   <p>My Address :: Potheri,chennai</p>
   <p>bm4329@srmist.edu.in</p>
   <p>0123456789</p>
+  <br>
+
+  <button type="button" class="btn btn-primary">Click Me!</button>
+
+<br>
+<br>
+<div style="background:#98bf21;height:80px;width:200px;position:absolute;">HELLO</div>
   </body>
 </html>
